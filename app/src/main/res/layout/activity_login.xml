@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3F51B5"
+>
+
+
+    <include android:id="@+id/action_bar"
+        layout="@layout/action_bar"></include>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar"
+        android:layout_centerHorizontal="true"
+
+        >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/fb"
+            android:layout_marginTop="40dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:hint="IP Address:"
+            android:textColorHint="#fff"
+            android:background="#11000000"
+            android:text="192.168.1.101"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_username"
+            android:layout_marginTop="19dp"
+            android:id="@+id/username"
+            android:textColor="#fff"
+            android:layout_below="@+id/imageView" android:layout_centerHorizontal="true"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:hint="Port:"
+            android:text="8888"
+            android:drawableLeft="@drawable/ic_password"
+            android:textColorHint="#fff"
+            android:background="#11000000"
+            android:ems="10"
+            android:layout_below="@+id/username"
+            android:layout_alignStart="@+id/username"
+            android:layout_marginTop="27dp"
+            android:id="@+id/password"/>
+        <Button
+            android:text="Login"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="#15ef6a"
+            android:textColor="#fff"
+            android:id="@+id/login"
+            android:layout_alignBaseline="@+id/exit" android:layout_alignBottom="@+id/exit"
+            android:layout_alignEnd="@+id/password"/>
+        <Button
+            android:text="Exit"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="65dp"
+            android:background="@color/red"
+            android:textColor="#fff"
+            android:id="@+id/exit"
+            android:layout_below="@+id/password" android:layout_alignStart="@+id/password"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

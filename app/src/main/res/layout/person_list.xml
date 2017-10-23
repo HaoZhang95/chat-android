@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#fff"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/myself"
+        android:orientation="vertical">
+
+
+        <!--放字符的条目-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+            <!--联系人头像-->
+            <ImageView
+                android:id="@+id/myself_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/mylogo"
+                android:focusable="false" />
+
+            <!--联系人名字-->
+            <TextView
+                android:id="@+id/myself_name"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="Test"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginBottom="1dp"
+        android:background="@color/gray" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/myself"
+        android:background="@color/gray"
+        android:id="@+id/blank"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/blank"
+        android:id="@+id/list_layout"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="0dp"
+            android:background="@color/gray" />
+
+        <ListView
+            android:id="@+id/list"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/main_list_divider_line"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

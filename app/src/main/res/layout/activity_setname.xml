@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include android:id="@+id/action_bar"
+        layout="@layout/action_bar"></include>
+
+
+    <RelativeLayout
+            android:id="@+id/view_user"
+            android:layout_width="fill_parent"
+            android:layout_height="120dip"
+            android:layout_marginTop="40dp" 
+        android:padding="12dp"  >
+
+        <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+
+            <ImageView
+                    android:id="@+id/head"
+                    android:layout_width="90.0dip"
+                    android:layout_height="90.0dip"
+                    android:src="@drawable/wechat"
+                    android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+
+
+            <ImageView
+                    android:id="@+id/img_edit"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/jy_icon_resume" android:layout_alignParentBottom="true"
+                    android:layout_alignEnd="@+id/head"/>
+        </RelativeLayout>
+        </RelativeLayout>
+
+    <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/edittext_login"
+            android:hint="Please set your nick name"
+            android:text="default name"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#111"
+            android:textColorHint="#3f51b5"
+            android:textSize="20sp" android:maxLines="1"/>
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#3f51b5"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="verify"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+</LinearLayout>

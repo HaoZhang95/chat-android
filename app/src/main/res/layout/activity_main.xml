@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+
+	<include android:id="@+id/action_bar"
+		layout="@layout/action_bar"></include>
+
+	<FrameLayout
+		android:id="@+id/fragment_container"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1" >
+
+
+	</FrameLayout>
+
+	<RadioGroup android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/group"
+				android:orientation="horizontal"
+
+	>
+
+		<RadioButton
+			android:id="@+id/chat"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_weight="1"
+			android:button="@null"
+			android:drawableTop="@drawable/tab_weixin"
+			android:fontFamily="sans-serif"
+			android:gravity="center"
+			android:scaleX="0.6"
+			android:scaleY="0.6"
+			android:text="chat"
+			android:textColor="@drawable/text_color"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+
+
+		<RadioButton
+			android:id="@+id/contacts"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:button="@null"
+			android:drawableTop="@drawable/tab_contact_list"
+			android:gravity="center"
+			android:scaleX="0.6"
+			android:scaleY="0.6"
+			android:text="contacts"
+			android:textColor="@drawable/text_color"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+
+
+		<!--<RadioButton android:layout_width="wrap_content"
+					 android:layout_height="wrap_content"
+					 android:id="@+id/discovery"
+					 android:layout_weight="1"
+					 android:text="discovery"
+					 android:textColor="@drawable/text_color"
+					 android:button="@null"
+					 android:drawableTop="@drawable/tab_find"
+					 android:gravity="center"
+					 android:scaleX="0.6"
+					 android:scaleY="0.6"
+					 android:textSize="14sp"
+					 android:textStyle="bold"/>-->
+
+		<RadioButton
+			android:id="@+id/info"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:button="@null"
+			android:drawableTop="@drawable/tab_profile"
+			android:gravity="center"
+			android:paddingBottom="-50dp"
+			android:scaleX="0.6"
+			android:scaleY="0.6"
+			android:text="settings"
+			android:textColor="@drawable/text_color"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+
+	</RadioGroup>
+	-->
+
+
+	<!--<include layout="@layout/layout_bottom"/>-->
+
+</LinearLayout>
